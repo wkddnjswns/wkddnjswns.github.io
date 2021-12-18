@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>경북대학교 북문 식당 - 양식</title>
+  <link rel="stylesheet" href="./sub.css">
+</head>
+<body>
+  <h1>경북대학교 북문 식당 - 양식</h1>
+  <br>
+  <ul>
+    <li><a href="#" onclick="showCon1(), hideCon2(), hideCon3(), hidePic2(), hidePic3()"><b>낭만놀이</b></a></li>
+    <li><a href="#" onclick="showCon2(), hideCon1(), hideCon3(), hidePic1(), hidePic3()"><b>앞치마 입는 남자</b></a></li>
+    <li><a href="#" onclick="showCon3(), hideCon1(), hideCon2(), hidePic1(), hidePic2()"><b>팀스 쿠치나</b></a></li>
+	</ul>	
+  <div id="con1" class="show">
+    <h2>낭만놀이</h2>
+    <p><a href="https://map.naver.com/v5/entry/place/1022977047?c=14316773.0165090,4286106.6778774,15,0,0,0,dh&placePath=%3Fentry=plt" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 대학로23길 18-9<br><br><b>전화번호</b> : 0507-1313-7442<br><br><b>거리</b> : 경북대학교 북문 기준 338m (도보 6분)<br><br><b>영업시간</b> : 매일 11:00 - 21:30<br><br><b>SNS</b> : <a href="http://instagram.com/nangman__p" target="_blank"><b><i>인스타그램</i></b></a><br><br><b>대표 메뉴</b> : 낭만놀이 브런치 (10,000\), 오픈 샌드위치 (9,000\) <button id="open" onclick="showPic1()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="con2" class="show">
+    <h2>앞치마 입는 남자</h2>
+    <p><a href="https://map.naver.com/v5/entry/place/1745206355?c=14316730.3922760,4286182.3661903,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 산격로10길 37<br><br><b>전화번호</b> : 053-955-9733<br><br><b>거리</b> : 경북대학교 북문 기준 415m (도보 7분)<br><br><b>영업시간</b> : 월 - 토 11:30 - 21:00<br><br><b>대표 메뉴</b> : 새우 베이컨 로제 파스타 (8,500\), 치킨 리조또 (7,500\) <button id="open" onclick="showPic2()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="con3" class="show">
+    <h2>팀스 쿠치나</h2>
+    <p><a href="https://map.naver.com/v5/entry/place/1197089038?c=14316730.6817066,4286002.4355403,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 대학로23길 26<br><br><b>전화번호</b> : 0507-1496-9999<br><br><b>거리</b> : 경북대학교 북문 기준 264m (도보 5분)<br><br><b>영업시간</b> : 매일 11:30 - 21:00, 마지막 주문 20:30<br><br><b>대표 메뉴</b> : 마르게리따 피자 (12,900\), 채끝 스테이크 샐러드 (16,000\) <button id="open" onclick="showPic3()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="pic1" class="show">
+    <p><img src="wes11.jfif"><img src="wes12.jfif"></p>
+  </div>
+  <div id="pic2" class="show">
+    <p><img src="wes21.PNG"><img src="wes22.PNG"></p>
+  </div>
+  <div id="pic3" class="show">
+    <p><img src="wes31.PNG"><img src="wes32.PNG"></p>
+  </div>
+  
+  <script>
+    function showCon1() {
+      document.querySelector('#con1').style.display = "block";	
+    }
+    function showCon2() {
+      document.querySelector('#con2').style.display = "block";
+    }
+    function showCon3() {
+      document.querySelector('#con3').style.display = "block";
+    }
+    function showPic1() {
+      document.querySelector('#pic1').style.display = "block";	
+    }
+    function showPic2() {
+      document.querySelector('#pic2').style.display = "block";	
+    }
+    function showPic3() {
+      document.querySelector('#pic3').style.display = "block";	
+    }
+    function hideCon1() {
+      document.querySelector('#con1').style.display = "none";	 
+    }
+    function hideCon2() {
+      document.querySelector('#con2').style.display = "none";	 
+    }
+    function hideCon3() {
+      document.querySelector('#con3').style.display = "none";	 
+    }
+    function hidePic1() {
+      document.querySelector('#pic1').style.display = "none";	  
+    }
+    function hidePic2() {
+      document.querySelector('#pic2').style.display = "none";	  
+    }
+    function hidePic3() {
+      document.querySelector('#pic3').style.display = "none";
+    }
+  </script>
+</body>
+</html>

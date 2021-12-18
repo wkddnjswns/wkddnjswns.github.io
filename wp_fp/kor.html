@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>경북대학교 북문 식당 - 한식</title>
+  <link rel="stylesheet" href="./sub.css">
+</head>
+<body>
+  <h1>경북대학교 북문 식당 - 한식</h1>
+  <br>
+  <ul>
+		<li><a href="#" onclick="showCon1(), hideCon2(), hideCon3(), hidePic2(), hidePic3()"><b>고니식탁</b></a></li>
+    <li><a href="#" onclick="showCon2(), hideCon1(), hideCon3(), hidePic1(), hidePic3()"><b>한끼갈비</b></a></li>
+    <li><a href="#" onclick="showCon3(), hideCon1(), hideCon2(), hidePic1(), hidePic2()"><b>현풍닭칼국수 경대점</b></a></li>
+	</ul>
+  <div id="con1" class="show">
+    <h2>고니식탁</h2>
+    <p><a href="https://map.naver.com/v5/entry/place/37107669?c=14316623.0246271,4285852.3810956,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 산격로6길 29<br><br><b>전화번호</b> : 053-939-5585<br><br><b>거리</b> : 경북대학교 북문 기준 158m (도보 4분)<br><br><b>영업시간</b> : 매일 11:00 - 21:30, 브레이크 타임 15:30~17:00, 마지막 주문 20:50<br><br><b>대표 메뉴</b> : 김치찌개 (6,500\), 유자 두루치기 (6,500\) <button id="open" onclick="showPic1()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="con2" class="show">
+    <h2>한끼갈비</h2>
+    <p><a href="https://map.naver.com/v5/search/%ED%95%9C%EB%81%BC%EA%B0%88%EB%B9%84/place/1005147546?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14315711.5072406,4285901.8218827,15,0,0,0,dh" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 대학로17길 7-1<br><br><b>전화번호</b> : 053-218-0012<br><br><b>거리</b> : 경북대학교 북문 기준 186m (도보 4분)<br><br><b>영업시간</b> : 평일 11:00 - 22:30, 마지막 주문 21:30<br><br><b>대표 메뉴</b> : 매운 갈비찜 (10,000\), 묵은지 갈비찜 (11,000\) <button id="open" onclick="showPic2()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="con3" class="show">
+    <h2>현풍닭칼국수 경대점</h2>
+    <p><a href="https://map.naver.com/v5/search/%ED%98%84%ED%92%8D%EB%8B%AD%EC%B9%BC%EA%B5%AD%EC%88%98%20%EA%B2%BD%EB%B6%81%EB%8C%80%EC%A0%90/place/1614928309?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14315963.8907902,4286082.5478724,15,0,0,0,dh" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 대학로 105<br><br><b>전화번호</b> : 053-939-9990<br><br><b>거리</b> : 경북대학교 북문 기준 270m (도보 5분)<br><br><b>영업시간</b> : 평일 10:00 - 01:50, 주말 10:00 - 21:30<br><br><b>대표 메뉴</b> : 닭칼국수 (7,000\), 삼계칼국수 (9,500\) <button id="open" onclick="showPic3()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="pic1" class="show">
+    <p><img src="kor11.PNG"><img src="kor12.PNG"></p>
+  </div>
+  <div id="pic2" class="show">
+    <p><img src="kor21.jfif"><img src="kor22.jfif"></p>
+  </div>
+  <div id="pic3" class="show">
+    <p><img src="kor31.jfif"><img src="kor32.jfif"></p>
+  </div>
+  
+  <script>
+    function showCon1() {
+      document.querySelector('#con1').style.display = "block";	
+    }
+    function showCon2() {
+      document.querySelector('#con2').style.display = "block";
+    }
+    function showCon3() {
+      document.querySelector('#con3').style.display = "block";	
+    }
+    function showPic1() {
+      document.querySelector('#pic1').style.display = "block";	
+    }
+    function showPic2() {
+      document.querySelector('#pic2').style.display = "block";	
+    }
+    function showPic3() {
+      document.querySelector('#pic3').style.display = "block";	
+    }
+    function hideCon1() {
+      document.querySelector('#con1').style.display = "none";	  
+    }
+    function hideCon2() {
+      document.querySelector('#con2').style.display = "none";	 
+    }
+    function hideCon3() {
+      document.querySelector('#con3').style.display = "none";	 
+    }
+    function hidePic1() {
+      document.querySelector('#pic1').style.display = "none";	 
+    }
+    function hidePic2() {
+      document.querySelector('#pic2').style.display = "none";	 
+    }
+    function hidePic3() {
+      document.querySelector('#pic3').style.display = "none";	 
+    }
+  </script>
+</body>
+</html>
