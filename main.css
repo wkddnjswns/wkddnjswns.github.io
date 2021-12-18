@@ -2,7 +2,7 @@
   justify-content: space-around;
   display: grid;
   grid-template-columns: repeat(2, 48%); 
-  grid-template-rows: repeat(3, 280px);  
+  grid-template-rows: repeat(3, 250px);  
   grid-gap: 10px 10px;   
 }
 h1 {
