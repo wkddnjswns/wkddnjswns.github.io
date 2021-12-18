@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>경북대학교 북문 식당 - 일식</title>
+  <link rel="stylesheet" href="./sub.css">
+</head>
+<body>
+  <h1>경북대학교 북문 식당 - 일식</h1>
+  <br>
+  <ul>
+    <li><a href="#" onclick="showCon1(), hideCon2(), hideCon3(), hidePic2(), hidePic3()"><b>마사</b></a></li>
+    <li><a href="#" onclick="showCon2(), hideCon1(), hideCon3(), hidePic1(), hidePic3()"><b>고운라멘</b></a></li>
+    <li><a href="#" onclick="showCon3(), hideCon1(), hideCon2(), hidePic1(), hidePic2()"><b>나이스샤워 경대북문점</b></a></li>
+	</ul>	
+  <div id="con1" class="show">
+    <h2>마사</h2>
+    <p><a href="https://map.naver.com/v5/search/%EC%82%B0%EA%B2%A9%EB%8F%99%20%EB%A7%88%EC%82%AC/place/1560634149?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14315555.9382523,4285831.9480177,15,0,0,0,dh" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 산격로6길 18<br><br><b>전화번호</b> : 053-247-6678<br><br><b>거리</b> : 경북대학교 북문 기준 275m (도보 6분)<br><br><b>영업시간</b> : 월 - 토 11:00 - 20:00, 브레이크 타임 15:30 - 17:00<br><br><b>대표 메뉴</b> : 마사 모듬 초밥 (11,000\), 연어 덮밥 (11,000\) <button id="open" onclick="showPic1()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="con2" class="show">
+    <h2>고운라멘</h2>
+    <p><a href="https://map.naver.com/v5/entry/place/1445099526?c=14316302.4690214,4286063.2549001,15,0,0,0,dh" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 대학로23길 20-1<br><br><b>전화번호</b> : 053-719-0597<br><br><b>거리</b> : 경북대학교 북문 기준 317m (도보 6분)<br><br><b>영업시간</b> : 매일 11:00 - 20:00<br><br><b>대표 메뉴</b> : 차슈 불고기 라멘 (9,000\), 곱창 불고기 덮밥 (10,000\) <button id="open" onclick="showPic2()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="con3" class="show">
+    <h2>나이스샤워 경대북문점</h2>
+    <p><a href="https://map.naver.com/v5/search/%EC%82%B0%EA%B2%A9%EB%8F%99%20%EB%82%98%EC%9D%B4%EC%8A%A4%EC%83%A4%EC%9B%8C/place/1993215714?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14315616.4960552,4285965.6225412,15,0,0,0,dh" target="_blank"><b><i>더 많은 정보 보러 가기</i></b></a></p>
+    <p><b>주소</b> : 대구 북구 대학로13길 20<br><br><b>전화번호</b> : 010-6622-9699<br><br><b>거리</b> : 경북대학교 북문 기준 327m (도보 6분)<br><br><b>영업시간</b> : 매일 11:00 - 21:00<br><br><b>대표 메뉴</b> : 규동 (9,000\), 샤워 텐동 (9,000\) <button id="open" onclick="showPic3()">메뉴 이미지 보기</button></p>
+  </div>
+  <div id="pic1" class="show">
+    <p><img src="jap11.PNG"><img src="jap12.PNG"></p>
+  </div>
+  <div id="pic2" class="show">
+    <p><img src="jap21.jfif"><img src="jap22.jfif"></p>
+  </div>
+  <div id="pic3" class="show">
+    <p><img src="jap31.jfif"><img src="jap32.jfif"></p>
+  </div>
+  
+  <script>
+    function showCon1() {
+      document.querySelector('#con1').style.display = "block";	
+    }
+    function showCon2() {
+      document.querySelector('#con2').style.display = "block";	
+    }
+    function showCon3() {
+      document.querySelector('#con3').style.display = "block";	
+    }
+    function showPic1() {
+      document.querySelector('#pic1').style.display = "block";	
+    }
+    function showPic2() {
+      document.querySelector('#pic2').style.display = "block";	
+    }
+    function showPic3() {
+      document.querySelector('#pic3').style.display = "block";	
+    }
+    function hideCon1() {
+      document.querySelector('#con1').style.display = "none";	 
+    }
+    function hideCon2() {
+      document.querySelector('#con2').style.display = "none";	  
+    }
+    function hideCon3() {
+      document.querySelector('#con3').style.display = "none";	  
+    }
+    function hidePic1() {
+      document.querySelector('#pic1').style.display = "none";	  
+    }
+    function hidePic2() {
+      document.querySelector('#pic2').style.display = "none";	  
+    }
+    function hidePic3() {
+      document.querySelector('#pic3').style.display = "none";	
+    }
+  </script>
+</body>
+</html>
